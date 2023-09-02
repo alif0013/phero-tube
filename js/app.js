@@ -31,7 +31,7 @@ const handleLoadVideos = async (id) => {
   if (data.data.length === 0) {
     // No data found for the selected category
     const noDataFoundImage = document.createElement('img');
-    noDataFoundImage.src = "./image/icon.png";
+    noDataFoundImage.src = "../image/icon.png";
     const h1 = document.createElement('h1');
     h1.innerText = "Oops!! Sorry, There is no content here";
     noDataFound.appendChild(noDataFoundImage);

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- link daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto mt-4 bg-[#25252533]">
+        <div><h1 class="text-4xl text-center py-4 text-blue-900">My Blog</h1></div>
+    </header>
+    <main class="container mx-auto mt-5">
+        <!-- blog question 1 -->
+        <section class="px-4 lg:w-[1000px] justify-center mx-auto">
+            <div>
+                <div class="mt-3">
+                   <h1 class="text-2xl mb-5"><span class="font-bold underline">Question 1:</span> Discuss the scope of var, let, and const :-</h1>
+                </div>
+                <div class="mt-2">
+                   <h2 class="text-lg mb-5"><span class="font-bold underline">Ans:</span> JavaScript, like a lot of more modern languages, provides a host of different methods for variable declaration. JavaScript has the var, let and const keywords for variable declarations and with each comes a different use case. This article aims to dive in-depth into the caveats and nuances which you might encounter when using either of these variable declaration methods.</h2>
+
+                   <p class="mt-2"><span class="font-bold">1.Var : </span> keyword declares a variable which is scoped to its current execution context, optionally initializing to a value.</p>
+
+                   <p class="mt-2"><span class="font-bold">2.Let : </span> keyword declares a block scoped variable, optionally initializing it to a value..</p>
+
+                   <p class="mt-2"><span class="font-bold">3.Const : </span> keyword declares constants which are block scoped much like variables defined using let but the value of a constant cannot change. The const declaration creates a read-only reference to a value.</p>
+
+                   <p class="mt-5"><span class="font-bold">Conclution :</span> var has function or global scope, is hoisted, and can be re-declared. let and const have block scope, are hoisted with a Temporal Dead Zone, and cannot be re-declared in the same scope. const additionally enforces immutability for the assigned value, but it doesn't mean the content of objects or arrays can't be changed. It's recommended to use let and const over var due to their more predictable behavior and better scoping.</p>
+                </div>
+            </div>
+            <hr class="mt-5">
+
+            <!-- question 2 -->
+            <div>
+                <div class="mt-4">
+                    <h1 class="text-2xl mb-5"><span class="font-bold underline">Question 2:</span> Tell us the use cases of null and undefined :-</h1>
+                 </div>
+                 <div class="mt-2">
+                    <h2 class="text-lg mb-5"><span class="font-bold underline">Ans:</span> Null and undefined are both special values in programming languages, often used to indicate the absence or lack of a meaningful value.</h2>
+
+                    <h2 class="mt-2"><span class="font-bold">1. Undefined :</span> Undefined means the variable has been declared, but its value has not been assigned.</h2>
+
+                    <p class="mt-2">A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned .</p>
+
+                    <h2 class="mt-2"><span class="font-bold">2. Null :</span> Null means an empty value or a blank value.</h2>
+
+                    <p class="mt-2">Null is an object in JavaScript and represents primitive data types. A null value in JavaScript is used for referring absence of any object value and if any function or variable returns null, then we can infer that the object could not be created.</p>
+
+                    <p class="mt-5"><span class="font-bold">Conclution :</span> undefined is typically used to represent variables that have been declared but not assigned a value, function parameters without provided arguments, and missing object properties. Null, on the other hand, is used to intentionally indicate that a variable or property has no value or to clear an existing value. Both values are important to handle various scenarios where the absence of a value needs to be represented.</p>
+                 </div>
+            </div>
+            <hr class="mt-5">
+            
+            <!-- question 3 -->
+            <div>
+                <div class="mt-4">
+                    <h1 class="text-2xl mb-5"><span class="font-bold underline">Question 3:</span> What do you mean by REST API?:-</h1>
+                 </div>
+                 <div>
+                    <h2 class="text-lg mb-5"><span class="font-bold underline">Ans:</span> A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data.</h2>
+
+                    <p class="mt-2">A REST API (also called a “RESTful” API) is a specific type of API that follows these guidelines. REST stands for Representational State Transfer. This means that when a client requests a resource using a REST API, the server transfers back the current state of the resource in a standardized representation.</p>
+                 </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
